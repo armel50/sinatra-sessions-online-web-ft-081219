@@ -23,6 +23,7 @@ class App < Sinatra::Base
     if session[:foo] == 'hello'
       redirect '/fetch'
     else
+       session[:foo] == 'hello'
       "Session value has not been set!"
     end
   end
